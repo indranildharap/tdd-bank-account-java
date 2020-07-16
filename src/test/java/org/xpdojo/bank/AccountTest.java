@@ -11,6 +11,8 @@ public class AccountTest {
 
     public void depositAnAmountToIncreaseTheBalance() {
         Account account = new Account();
-        assertThat(account.checkBalance(10)).isEqualTo(10);
+        assertThat(account.checkAmountNeg(-1)).isEqualTo(1);
+        assertThat(account.checkAmountNeg(10)).isEqualTo(0);
+
     }
 }
