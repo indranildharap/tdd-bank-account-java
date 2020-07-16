@@ -15,6 +15,6 @@ public class AccountTest {
         assertThat(account.checkAmountNeg(10)).isEqualTo(0);
         assertThat(account.addMoney(-1)).isEqualTo(1);
         assertThat(account.addMoney(10)).isEqualTo(10);
-
+        assertThat(account.addMoney(20)).isEqualTo(20);
     }
 }
